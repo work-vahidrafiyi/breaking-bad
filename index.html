@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دنیای ذهن دیدار | هدیه‌ای برای عاشق روانشناسی</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="sound-control">
+        <button id="toggleSound" class="sound-btn">
+            <i class="fas fa-volume-mute" id="soundIcon"></i>
+        </button>
+    </div>
+    
+    <div class="container">
+        <header>
+            <h1>دنیای ذهن دیدار</h1>
+            <h2>سفری در اعماق روانشناسی</h2>
+            <!-- <p class="subtitle">هدیه‌ای برای دیدار عزیزپور، کاوشگر راز و رمزهای ذهن انسان</p> -->
+            
+            <div class="brain-container">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="200px" height="200px" viewBox="0 0 491.255 491.256" style="enable-background:new 10 0 491.255 491.256;"
+                xml:space="preserve">
+           <g>
+               <g>
+                   <path d="M109.041,134.176l-40.443-24.312l59.576-0.8V56.226L41.051,90.077l-17.772,30.618l58.812,25.725c0,0-71.067,0-74.734,0
+                       C3.672,146.419,0,207.677,0,207.677h71.049L109.041,134.176z"/>
+                   <polygon points="53.662,222.98 1.6,222.98 78.178,286.428 121.056,269.273 		"/>
+                   <polygon points="400.594,275.043 428.784,288.529 388.357,283.625 403.059,245.651 491.255,239.533 454.497,177.054 
+                       385.881,227.271 320.968,207.677 256.043,245.651 182.542,243.199 178.858,276.28 227.861,295.268 222.968,314.266 
+                       184.995,302.005 123.736,276.28 99.232,289.756 99.232,331.408 137.211,357.133 254.818,357.133 276.864,308.136 251.758,276.748 
+                       322.195,279.959 290.807,309.816 327.099,311.195 373.656,293.434 406.562,321.763 479.322,321.33 485.534,252.833 
+                       406.737,255.448 		"/>
+                   <path d="M219.167,379.18l66.326,69.221l36.759-17.142l-56.528-63.103C265.724,368.156,227.739,379.18,219.167,379.18z"/>
+                   <polygon points="275.031,356.678 311.779,389.746 394.616,371.215 394.616,323.596 288.04,323.596 		"/>
+                   <polygon points="302.904,131.963 300.148,186.845 321.003,194.617 352.847,146.834 356.502,55.77 295.244,45.879 249.3,115.183 		
+                       "/>
+                   <polygon points="356.502,168.466 356.502,201.541 390.809,201.541 452.043,150.086 390.809,85.173 373.656,101.41 376.096,143.36 
+                               "/>
+                   <polygon points="130.013,143.36 118.832,164.799 135.057,177.054 129.855,195.417 99.232,185.018 77.792,222.98 128.173,259.127 
+                       165.383,244.507 179.291,201.541 193.565,207.677 193.565,221.153 269.519,216.249 281.768,181.953 281.768,144.002 
+                       222.968,125.587 242.568,97.737 266.459,60.05 229.233,43.515 150.232,42.855 149.297,118.546 212.552,156.222 193.565,164.799 		
+                       "/>
+               </g>
+           </g>
+           </svg>
+                <div class="brain-glow"></div>
+            </div>
+        </header>
+        
+        <!-- منوی اصلی (کارت‌ها) -->
+        <div class="main-menu" id="main-menu">
+            <div class="menu-card" data-section="quotes-section">
+                <div class="card-header">
+                    <h3>سخنان بزرگان</h3>
+                </div>
+                <div class="card-body">
+                    <div class="card-icon">
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <p class="card-desc">الهام‌بخش‌ترین جملات از متفکران و روانشناسان بزرگ</p>
+                </div>
+            </div>
+            
+            <div class="menu-card" data-section="emotions-section">
+                <div class="card-header">
+                    <h3>آزمایشگاه احساسات</h3>
+                </div>
+                <div class="card-body">
+                    <div class="card-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <p class="card-desc">احساس امروز خود را کاوش کنید</p>
+                </div>
+            </div>
+            
+            <div class="menu-card" data-section="personality-test-section">
+                <div class="card-header">
+                    <h3>آزمون شخصیت‌شناسی</h3>
+                </div>
+                <div class="card-body">
+                    <div class="card-icon">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <p class="card-desc">خودتان را بهتر بشناسید</p>
+                </div>
+            </div>
+            
+            <div class="menu-card" data-section="mindfulness-section">
+                <div class="card-header">
+                    <h3>تمرین ذهن‌آگاهی</h3>
+                </div>
+                <div class="card-body">
+                    <div class="card-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <p class="card-desc">حضور در لحظه حال و تمرین آرامش ذهن</p>
+                </div>
+            </div>
+            
+            <div class="menu-card" data-section="notes-section">
+                <div class="card-header">
+                    <h3>یادداشت‌های روانشناسی
+                    </h3>
+                </div>
+                <div class="card-body">
+                    <div class="card-icon">
+                        <i class="fas fa-pen-fancy"></i>
+                    </div>
+                    <p class="card-desc">تامل‌ها و یادداشت‌های خود را ثبت کنید</p>
+                </div>
+            </div>
+            
+            <div class="menu-card" data-section="emotions-wheel-section">
+                <div class="card-header">
+                    <h3>دایره احساسات پلاچیک</h3>
+                </div>
+                <div class="card-body">
+                    <div class="card-icon">
+                        <i class="fas fa-circle-notch"></i>
+                    </div>
+                    <p class="card-desc">کاوش احساسات انسانی و ترکیب آنها</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- بخش سخنان بزرگان -->
+        <div class="section quotes-section" id="quotes-section">
+            <button class="back-btn"><i class="fas fa-arrow-left"></i></button>
+            <div class="section-header">
+                <h2>سخنان بزرگان روانشناسی</h2>
+                <p class="subtitle">کلماتی که ذهن و روان را به چالش می‌کشند</p>
+            </div>
+            <div class="quotes-section-content">
+                <div class="quote-box">
+                    <p class="quote">"شناخت خود، اولین گام در مسیر درمان است. درست مانند چراغی که تاریکی را می‌شکند، خودآگاهی، ناشناخته‌های روان را آشکار می‌سازد."</p>
+                    <p class="author">- زیگموند فروید</p>
+                </div>
+                
+                <div class="quote-box">
+                    <p class="quote">"هر انسانی که توانایی مواجهه با سختی‌ها، غلبه بر ترس‌ها و پذیرش خویشتن را داشته باشد، می‌تواند بر هر چیزی غلبه کند."</p>
+                    <p class="author">- کارل راجرز</p>
+                </div>
+                
+                <div class="quote-box">
+                    <p class="quote">"هر آنچه ما هستیم، نتیجه چیزهایی است که اندیشیده‌ایم؛ بر پایه افکار ما ساخته شده و از افکار ما تشکیل یافته است."</p>
+                    <p class="author">- آلفرد آدلر</p>
+                </div>
+                
+                <div class="quote-box">
+                    <p class="quote">"ارزشمندترین بینش‌ها معمولاً ساده‌ترین آنها هستند. آگاهی از اینکه چگونه احساس می‌کنیم، اولین گام برای تغییر است."</p>
+                    <p class="author">- دانیل گلمن</p>
+                </div>
+                
+                <div class="quote-box">
+                    <p class="quote">"شخصیت شما تنها چیزی است که می‌توانید با خود به جهان پس از مرگ ببرید، پس آن را با دقت شکل دهید."</p>
+                    <p class="author">- کارل گوستاو یونگ</p>
+                </div>
+                
+                <div class="quote-box">
+                    <p class="quote">"انسان محکوم به آزادی است. زیرا یک‌بار به دنیا آمده، و دیگر آزاد است که مسئول همه کارهایی باشد که انجام می‌دهد."</p>
+                    <p class="author">- ژان پل سارتر</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- بخش آزمایشگاه احساسات -->
+        <div class="section emotions-section" id="emotions-section">
+            <button class="back-btn"><i class="fas fa-arrow-left"></i></button>
+            <div class="section-header">
+                <h2>آزمایشگاه احساسات</h2>
+                <p class="subtitle">احساس امروز خود را انتخاب کنید و پیامی دریافت کنید</p>
+            </div>
+            <div class="emotions-section-content">
+                <div class="emotion-buttons">
+                    <button class="emotion-btn" data-emotion="شادی" data-sound="happy">
+                        <i class="fas fa-smile"></i> شادی
+                    </button>
+                    <button class="emotion-btn" data-emotion="غم" data-sound="sad">
+                        <i class="fas fa-sad-tear"></i> غم
+                    </button>
+                    <button class="emotion-btn" data-emotion="اضطراب" data-sound="anxiety">
+                        <i class="fas fa-bolt"></i> اضطراب
+                    </button>
+                    <button class="emotion-btn" data-emotion="آرامش" data-sound="calm">
+                        <i class="fas fa-cloud"></i> آرامش
+                    </button>
+                    <button class="emotion-btn" data-emotion="خشم" data-sound="anger">
+                        <i class="fas fa-fire"></i> خشم
+                    </button>
+                    <button class="emotion-btn" data-emotion="شگفتی" data-sound="surprise">
+                        <i class="fas fa-star"></i> شگفتی
+                    </button>
+                </div>
+                
+                <div class="result-box">
+                    <p id="emotion-result">احساس خود را انتخاب کنید...</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- بخش آزمون شخصیت‌شناسی -->
+        <div class="section personality-test-section" id="personality-test-section">
+            <button class="back-btn"><i class="fas fa-arrow-left"></i> بازگشت به خانه</button>
+            <div class="section-header">
+                <h2>آزمون شخصیت‌شناسی</h2>
+                <p class="subtitle">پاسخ دهید و خود را بهتر بشناسید</p>
+            </div>
+            
+            <div class="test-container">
+                <!-- مرحله 1: شروع آزمون -->
+                <div id="test-start" style="display: block;">
+                    <p class="test-intro">آیا آماده‌اید تا سفری به درون خود داشته باشید؟ این آزمون کوتاه به شما کمک می‌کند خود را بهتر بشناسید.</p>
+                    <button id="begin-test-btn" class="test-btn">شروع آزمون</button>
+                </div>
+                
+                <!-- مرحله 2: سوالات آزمون -->
+                <div id="test-questions" style="display: none;">
+                    <div class="question-box">
+                        <h3 id="current-question">سوال</h3>
+                        <div class="test-options">
+                            <button class="test-option-btn" data-value="1">کاملاً مخالفم</button>
+                            <button class="test-option-btn" data-value="2">مخالفم</button>
+                            <button class="test-option-btn" data-value="3">خنثی</button>
+                            <button class="test-option-btn" data-value="4">موافقم</button>
+                            <button class="test-option-btn" data-value="5">کاملاً موافقم</button>
+                        </div>
+                    </div>
+                    <div class="test-progress-bar-container">
+                        <div class="test-progress-bar" id="question-progress"></div>
+                    </div>
+                    <p id="question-counter">سوال 1 از 10</p>
+                </div>
+                
+                <!-- مرحله 3: نتیجه آزمون -->
+                <div id="test-results" style="display: none;">
+                    <h3>نتیجه آزمون شما</h3>
+                    <div id="personality-result" class="result-text"></div>
+                    <button id="restart-test-btn" class="test-btn">آزمون مجدد</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- بخش تمرین ذهن‌آگاهی -->
+        <div class="section mindfulness-section" id="mindfulness-section">
+            <button class="back-btn"><i class="fas fa-arrow-left"></i></button>
+            <div class="section-header">
+                <h2>تمرین ذهن‌آگاهی</h2>
+                <p class="subtitle">لحظه‌ای برای آرامش و حضور در اکنون</p>
+            </div>
+            <div class="mindfulness-section-content">
+                <div class="mindfulness-container">
+                    <div class="breathing-circle">
+                        <div class="circle-inner">
+                            <p id="breathing-text">برای شروع کلیک کنید</p>
+                        </div>
+                    </div>
+                    <button id="start-breathing">شروع تمرین تنفس</button>
+                    <p class="mindfulness-guide">
+                        با این تمرین ساده، ذهن خود را آرام کنید و به لحظه حال بازگردید.
+                        هنگام دم، به آرامی هوا را از بینی وارد کنید و به شکم خود اجازه دهید منبسط شود.
+                        هنگام بازدم، به آرامی هوا را از دهان خارج کنید و اجازه دهید بدن شما آرام شود.
+                        با هر دم و بازدم، تنش‌ها را رها کنید و به آرامش درونی خود بازگردید.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- بخش یادداشت‌های روانشناسی -->
+        <div class="section notes-section" id="notes-section">
+            <button class="back-btn"><i class="fas fa-arrow-left"></i></button>
+            <div class="section-header">
+                <h2>یادداشت‌های روانشناسی</h2>
+                <p class="subtitle">افکار و برداشت‌های خود را ثبت کنید</p>
+            </div>
+            <div class="notes-section-content">
+                <div class="note-form">
+                    <textarea class="note-input" placeholder="یادداشت روانشناسی خود را اینجا بنویسید..."></textarea>
+                    <button class="save-btn">ذخیره یادداشت</button>
+                    
+                    <div class="saved-notes" id="notes-container">
+                        <!-- Notes will be added dynamically here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+<!-- بخش دایره احساسات پلاچیک -->
+<div class="section emotions-wheel-section" id="emotions-wheel-section">
+    <button class="back-btn"><i class="fas fa-arrow-left"></i> بازگشت به خانه</button>
+    <div class="section-header">
+        <h2>دایره احساسات پلاچیک</h2>
+        <p class="subtitle">کاوش احساسات انسانی و ترکیب آنها برای درک عمیق‌تر تجربیات روانی</p>
+    </div>
+    <div class="emotions-wheel-content">
+        <!-- دایره احساسات به صورت کارت -->
+        <div class="emotion-cards-container">
+            <div class="emotion-card" data-emotion="joy" style="--color: #ffdf5c;">
+                <div class="emotion-icon"><i class="fas fa-smile"></i></div>
+                <div class="emotion-name">شادی</div>
+            </div>
+            
+            <div class="emotion-card" data-emotion="trust" style="--color: #85c87d;">
+                <div class="emotion-icon"><i class="fas fa-handshake"></i></div>
+                <div class="emotion-name">اعتماد</div>
+            </div>
+            
+            <div class="emotion-card" data-emotion="fear" style="--color: #68b0ab;">
+                <div class="emotion-icon"><i class="fas fa-ghost"></i></div>
+                <div class="emotion-name">ترس</div>
+            </div>
+            
+            <div class="emotion-card" data-emotion="surprise" style="--color: #4056a1;">
+                <div class="emotion-icon"><i class="fas fa-surprise"></i></div>
+                <div class="emotion-name">شگفتی</div>
+            </div>
+            
+            <div class="emotion-card" data-emotion="sadness" style="--color: #8d6cd9;">
+                <div class="emotion-icon"><i class="fas fa-sad-tear"></i></div>
+                <div class="emotion-name">غم</div>
+            </div>
+            
+            <div class="emotion-card" data-emotion="disgust" style="--color: #c38d9e;">
+                <div class="emotion-icon"><i class="fas fa-dizzy"></i></div>
+                <div class="emotion-name">انزجار</div>
+            </div>
+            
+            <div class="emotion-card" data-emotion="anger" style="--color: #e27d60;">
+                <div class="emotion-icon"><i class="fas fa-angry"></i></div>
+                <div class="emotion-name">خشم</div>
+            </div>
+            
+            <div class="emotion-card" data-emotion="anticipation" style="--color: #e8a87c;">
+                <div class="emotion-icon"><i class="fas fa-hourglass-half"></i></div>
+                <div class="emotion-name">انتظار</div>
+            </div>
+        </div>
+        
+        <p class="wheel-instruction">روی احساسات کلیک کنید تا آنها را انتخاب کنید</p>
+        
+        <div class="selected-emotions">
+            <h3>احساسات انتخاب شده</h3>
+            <div class="selected-emotions-container" id="selected-emotions-container">
+                <p class="no-selection">هنوز احساسی انتخاب نشده است</p>
+            </div>
+            <button id="clear-emotions" class="emotion-btn">پاک کردن</button>
+        </div>
+        
+        <div class="emotion-combination">
+            <h3>ترکیب احساسات</h3>
+            <div class="combination-result" id="combination-result">
+                <p>با انتخاب دو یا چند احساس، ترکیب آنها را مشاهده کنید</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- تعریف احساسات (نمایش هنگام کلیک روی کارت احساس) -->
+    <div class="emotion-definitions">
+        <div class="emotion-modal" id="emotion-modal">
+            <div class="emotion-modal-content">
+                <span class="close-modal">&times;</span>
+                <h4 id="modal-emotion-title">عنوان احساس</h4>
+                <p id="modal-emotion-desc">توضیحات احساس</p>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <footer>
+        <div class="container">
+            <!-- <p class="footer-text">ساخته شده با <span class="footer-heart">❤</span> برای دیدار عزیزپور</p> -->
+            <p class="copyright">تمامی حقوق برای خانم دیدار عزیزپور محفوظ است &copy; ۱۴۰۴</p>
+        </div>
+    </footer>
+    
+    <!-- Audio elements -->
+    <audio id="backgroundMusic" loop>
+        <source src="assets/sounds/background.mp3" type="audio/mpeg">
+    </audio>
+    
+    <!-- <audio id="clickSound">
+        <source src="assets/sounds/click.mp3" type="audio/mpeg">
+    </audio>
+    
+    <audio id="happySound">
+        <source src="assets/sounds/happy.mp3" type="audio/mpeg">
+    </audio>
+    
+    <audio id="sadSound">
+        <source src="assets/sounds/sad.mp3" type="audio/mpeg">
+    </audio>
+    
+    <audio id="anxietySound">
+        <source src="assets/sounds/anxiety.mp3" type="audio/mpeg">
+    </audio>
+    
+    <audio id="calmSound">
+        <source src="assets/sounds/calm.mp3" type="audio/mpeg">
+    </audio>
+    
+    <audio id="angerSound">
+        <source src="assets/sounds/anger.mp3" type="audio/mpeg">
+    </audio>
+    
+    <audio id="surpriseSound">
+        <source src="assets/sounds/surprise.mp3" type="audio/mpeg">
+    </audio> -->
+    
+    <script src="script.js"></script>
+</body>
+</html>
